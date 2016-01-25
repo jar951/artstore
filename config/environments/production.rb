@@ -74,6 +74,12 @@ Rails.application.configure do
   # Use default logging formatter so that PID and timestamp are not suppressed.
   config.log_formatter = ::Logger::Formatter.new
 
+   config.after_initialize do
+     Pay2go.integration_mode = :development
+   end
+
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
+
+  config.action_mailer.default_url_options = { host: 'https://dry-hollows-25221.herokuapp.com' } # 你的 heroku app 網址
 end
