@@ -10,6 +10,7 @@ source 'https://rubygems.org'
  gem "pay2go"
  gem 'sqlite3', group: :development
  gem 'fog'
+ gem "figaro"
 
   group :production do
     gem "pg"
