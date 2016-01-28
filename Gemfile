@@ -9,6 +9,7 @@ source 'https://rubygems.org'
  gem "aasm"
  gem "pay2go"
  gem 'sqlite3', group: :development
+ gem 'fog'
 
   group :production do
     gem "pg"
